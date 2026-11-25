@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Northside House Works</title>
+    <meta
+      name="description"
+      content="Request a free handyman quote in North Brisbane. Call 0413 161 918 or email northsidehousework@gmail.com. Open 7 days."
+    />
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="./" aria-label="Northside House Works home">
+          <img class="brand-logo" src="./images/logo.png" alt="Northside House Works" width="220" height="90" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <a href="./">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html" aria-current="page">Contact Us</a>
+        </nav>
+        <a class="header-phone" href="tel:0413161918">0413 161 918</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact us</p>
+          <h1>Let’s sort your to-do list.</h1>
+          <p>
+            Call, email or send the form — free quotes, friendly advice, and we’re available seven days across North
+            Brisbane.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <aside class="contact-card reveal">
+            <h2>Direct contact</h2>
+            <div class="contact-rows">
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:0413161918">0413 161 918</a>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:northsidehousework@gmail.com">northsidehousework@gmail.com</a>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <span>Open 7 days</span>
+              </div>
+              <div>
+                <strong>Area</strong>
+                <span>North Brisbane · up to 50&nbsp;km</span>
+              </div>
+              <div>
+                <strong>Quotes</strong>
+                <span>Always free · workmanship guarantee</span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="reveal">
+            <h2 class="section-title" style="margin-bottom: 1.15rem">Send a message</h2>
+            <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="sr-only">
+                <label>Don’t fill this out: <input name="bot-field" /></label>
+              </p>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+                </div>
+              </div>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="suburb">Suburb</label>
+                  <input id="suburb" name="suburb" type="text" placeholder="e.g. Chermside" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="service">What do you need?</label>
+                <select id="service" name="service">
+                  <option value="Not sure yet">Not sure yet</option>
+                  <option value="Repairs">Repairs</option>
+                  <option value="Maintenance">Maintenance</option>
+                  <option value="Installations">Installations</option>
+                  <option value="General quote">General quote</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about the job — photos can be emailed after you send this."
+                  required
+                ></textarea>
+              </div>
+
+              <p class="form-note">Prefer a chat? Call <a href="tel:0413161918">0413 161 918</a>.</p>
+              <button class="btn btn-primary" type="submit">Send free quote request</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="./images/logo.png" alt="Northside House Works" width="200" height="80" />
+          </div>
+          <p>Friendly handyman &amp; maintenance for North Brisbane homes.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <div class="footer-links">
+            <a href="./">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <a href="tel:0413161918">0413 161 918</a>
+            <a href="mailto:northsidehousework@gmail.com">northsidehousework@gmail.com</a>
+            <span>Open 7 days · Free quotes</span>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year></span> Northside House Works</span>
+        <span>Licensed &amp; insured</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
